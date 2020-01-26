@@ -1,23 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@j-nordell 
-j-nordell
-/
-FEWD-Project2
-1
-00
- Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
-FEWD-Project2/index.html
-@j-nordell j-nordell removed #top and replaced with empty fragment. Adjusted 760 to 768 in…
-e798247 7 hours ago
-125 lines (125 sloc)  5.88 KB
-  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +9,7 @@ e798247 7 hours ago
     <meta name="author" content="Jennifer Nordell"/>
 
     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 
     <!-- Style sheets -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -37,13 +18,133 @@ e798247 7 hours ago
 <body>
     <div class="container">
         <header>
-           
+            <h1>The Code Review</h1>
         </header>
         <main>
-        
+            <section>
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+                <hr class="line-one"/>
+                <hr class="line-two"/>
+            </section>
+            <form action="index.html" method="post">
+                <div class="contact">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="full-name" id="full-name" placeholder="Required" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="Required" required>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone">
+                        <label for="address">Street Address</label>
+                        <input type="text" name="address" id="address">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city">
+                        <!-- State list adapted from https://www.mediacollege.com/internet/samples/html/state-list.html -->
+                        <label for="state">State</label>
+                        <select name="state" size="1" id="state">
+                            <option selected value="" disabled selected>Choose State</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <label for="zip">Zip Code</label>
+                        <input type="text" name="zip" id="zip">
+                    </fieldset>
+                </div>
+                <hr />
+                <div class="newsletter">
+                    <fieldset>
+                        <legend class="news-legend">Newsletter</legend>
+                        <div class="subjects">
+                            <fieldset id="newsletter-subjects">
+                                <legend>Select the newsletters you would like to receive</legend>
+                                <div class="html-news">
+                                    <input type="checkbox" value="HTML News" name="news" id="html-news">
+                                    <label for="html-news">HTML News</label>
+                                </div>
+                                <div class="css-news">
+                                    <input type="checkbox" value="CSS News" name="news" id="css-news">
+                                    <label for="css-news">CSS News</label>
+                                </div>
+                                <div class="js-news">
+                                    <input type="checkbox" value="JavaScript News" name="news" id="js-news">
+                                    <label for="js-news">Javascript News</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="format">
+                            <fieldset id="newsletter-format">
+                                <legend>Newletter format</legend>
+                                <div class="html-format">
+                                    <input type="radio" value="HTML" name="format" id="html-format">
+                                    <label for="html-format">HTML</label>
+                                </div>
+                                <div class="plain-format">
+                                    <input type="radio" value="Plain text" name="format" id="plain-format">
+                                    <label for="plain-format">Plain text</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="suggestions">
+                    <label for="suggestions">Other topics you'd like to hear about</label>
+                    <textarea id="suggestions" name="suggestions" rows="5"></textarea>
+                </div>
+                <input type="submit" value="Sign up" id="submit">
+            </form>
         </main>
         <footer>
-        
+            <p>Copyright The Code Review</p>
         </footer>
     </div>
 </body>
