@@ -31,17 +31,28 @@
                 <div class="contact">
                     <fieldset>
                         <legend>Contact Information</legend>
-                        <label for="full-name">Full Name</label>
-                        <input type="text" name="full-name" id="full-name" placeholder="Required" required>
-                        <label for="email">Email Address</label>
-                        <input type="email" name="email" id="email" placeholder="Required" required>
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="phone">
-                        <label for="address">Street Address</label>
-                        <input type="text" name="address" id="address">
-                        <label for="city">City</label>
-                        <input type="text" name="city" id="city">
+                        <div class="side-by-side">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" name="full-name" id="full-name" placeholder="Required" required>
+                        </div>
+                        <div class="side-by-side">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="Required" required>
+                        </div>
+                        <div class="side-by-side">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                        <div class="side-by-side">
+                            <label for="address">Street Address</label>
+                            <input type="text" name="address" id="address">
+                        </div>
+                        <div class="side-by-side">
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city">
+                        </div>
                         <!-- State list adapted from https://www.mediacollege.com/internet/samples/html/state-list.html -->
+                        <div class="side-by-side">
                         <label for="state">State</label>
                         <select name="state" size="1" id="state">
                             <option selected value="" disabled selected>Choose State</option>
@@ -96,8 +107,11 @@
                             <option value="WI">Wisconsin</option>
                             <option value="WY">Wyoming</option>
                         </select>
-                        <label for="zip">Zip Code</label>
-                        <input type="text" name="zip" id="zip">
+                        </div>
+                        <div class="side-by-side">
+                            <label for="zip">Zip Code</label>
+                            <input type="text" name="zip" id="zip">
+                        </div>
                     </fieldset>
                 </div>
                 <hr />
